@@ -1,0 +1,38 @@
+{
+  "name": "@barksh/platform",
+  "version": "2.0.0",
+  "description": "Platform Support",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarkSH/Bark-Platform.git"
+  },
+  "author": "WMXPY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BarkSH/Bark-Platform/issues"
+  },
+  "homepage": "https://github.com/BarkSH/Bark-Platform#readme",
+  "dependencies": {
+    "@barksh/preference": "^2.0.0"
+  },
+  "devDependencies": {
+    "@sudoo/build-utils": "^1.0.0",
+    "@sudoo/license": "^1.1.0",
+    "@sudoo/triforce": "^2.17.0"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ],
+    "instrument": true,
+    "reporter": [
+      "json",
+      "text-summary"
+    ],
+    "report-dir": "coverage",
+    "sourceMap": true
+  }
+}
