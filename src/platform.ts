@@ -18,5 +18,7 @@ export abstract class BarkPlatform {
     public abstract readBarkPreference(): BarkPreference | Promise<BarkPreference>;
     public abstract writeBarkPreference(preference: BarkPreference): Promise<void>;
 
-    public abstract getInstalledPackages(): BarkPackage[] | Promise<BarkPackage[]>;
+    public abstract listInstalledPackages(): BarkPackage[] | Promise<BarkPackage[]>;
+    public abstract installPackage(packageIdentifier: string): void | Promise<void>;
+    public abstract removePackage(packageIdentifier: string): void | Promise<void>;
 }
