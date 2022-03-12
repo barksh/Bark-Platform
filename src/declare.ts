@@ -1,5 +1,5 @@
 /**
  * @author WMXPY
  * @namespace Platform
- * @description Package
+ * @description Declare
  */
