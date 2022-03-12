@@ -5,6 +5,7 @@
  */
 
 import { BarkPreference } from "@barksh/preference";
+import { BarkPackage } from "./declare";
 
 export abstract class BarkPlatform {
 
@@ -17,5 +18,5 @@ export abstract class BarkPlatform {
     public abstract readBarkPreference(): BarkPreference | Promise<BarkPreference>;
     public abstract writeBarkPreference(preference: BarkPreference): Promise<void>;
 
-    public abstract getInstalledPackages(): string[] | Promise<string[]>;
+    public abstract getInstalledPackages(): BarkPackage[] | Promise<BarkPackage[]>;
 }
